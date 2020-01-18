@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  {% for student in students %}
+  <div>
+    Student ID: {{student.id}}<br>
+    Name: {{student.first+' '+student.last}}<br>
+    Created: {{student.created}}<br>
+    Updated: {{student.updated}}<br><br>
+  </div>
+  {% endfor %}
+</body>
+</html>
