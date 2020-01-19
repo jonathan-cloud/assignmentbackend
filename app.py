@@ -57,6 +57,10 @@ def editStudent(studentId):
         cur.execute(query)
 
     # conn.commit()
+    query="""update students
+set last_update=CURRENT_TIMESTAMP
+where id="""+studentId
+    cur.execute(query)
     return 'asdf'
 
 
@@ -119,7 +123,10 @@ def editDesired(studentId):
                 magicToAdd['id']+" and student_id="+studentId
 
         cur.execute(query)
-
+    query="""update students
+set last_update=CURRENT_TIMESTAMP
+where id=1"""
+    cur.execute(query)
     return 'asdf'
 
 
@@ -142,7 +149,10 @@ def add_crouse(studentId):
         cur.execute(query)
     else:
         print('he got it')
-
+    query="""update students
+set last_update=CURRENT_TIMESTAMP
+where id=1"""
+    cur.execute(query)
     return 'yes'
 
 # END POSTS
