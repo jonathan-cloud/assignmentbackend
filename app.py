@@ -15,7 +15,7 @@ password = "88976a0de94126f5c6e76e6b901644388173151098beb352f11ba4f9ced7f6e6"
 host = "ec2-174-129-33-139.compute-1.amazonaws.com"
 port = 5432
 
-conn = None
+# conn = None
 
 # POST REQUESTS
 @app.route('/edit/<studentId>', methods=['POST'])
